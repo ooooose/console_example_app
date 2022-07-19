@@ -1,4 +1,4 @@
 class TaskCategory < ApplicationRecord
   belongs_to :task
-  belongs_to :categroy
+  belongs_to :category
 end

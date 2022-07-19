@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_19_205450) do
+ActiveRecord::Schema.define(version: 2022_07_19_215529) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -20,10 +20,10 @@ ActiveRecord::Schema.define(version: 2022_07_19_205450) do
 
   create_table "task_categories", force: :cascade do |t|
     t.integer "task_id"
-    t.integer "categroy_id"
+    t.integer "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["categroy_id"], name: "index_task_categories_on_categroy_id"
+    t.index ["category_id"], name: "index_task_categories_on_category_id"
     t.index ["task_id"], name: "index_task_categories_on_task_id"
   end
 
